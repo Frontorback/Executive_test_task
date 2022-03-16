@@ -1,0 +1,27 @@
+@import "../scss/mixins";
+
+.Inputs{
+    max-width: rem(500);
+    padding-left: rem(16);
+    .DateAndCountry{
+        @include flr()
+    }
+    .areaLabel{
+        display:inline-block;
+        color: rgb(255, 255, 255);
+        margin: rem(18) 0 rem(6) 0; 
+    }
+    textarea{
+        box-sizing: border-box;
+        width: 100%;
+        height: 20vh;
+        border-color: rgb(255, 255, 255);
+        padding: rem(6);
+        background-color: rgb(54, 164, 253);
+        outline: none;
+        cursor: text;
+        &::placeholder{
+        color: rgb(131, 170, 202);
+        }
+    }
+}

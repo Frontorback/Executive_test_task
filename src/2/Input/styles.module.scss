@@ -1,0 +1,39 @@
+@import "../../scss/mixins";
+
+.Input{
+    @include flc();
+    width: 100%;
+    .title{
+        color: rgb(255, 255, 255);
+        margin: rem(18) 0 rem(6) 0;
+    }
+    .inputItem{
+        position: relative;
+        color: rgb(255, 255, 255);   
+        border: rem(1) solid rgb(255, 255, 255);
+        padding: rem(6);
+        background-color: rgb(54, 164, 253);
+        outline: none; 
+        cursor: text;     
+    }
+    .inputError{
+        position: absolute;
+        margin-top: rem(75);
+        color: rgb(228, 74, 74);
+    }
+    input[type="month"]{
+        padding-left: rem(36);
+        margin-right: rem(36);
+        cursor: not-allowed;
+    }
+    ::-webkit-calendar-picker-indicator {
+        color: transparent;
+        opacity: 1;
+        background: url("../assets/img/calendar.svg") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        left: rem(-18);
+        cursor: pointer;
+    }
+  
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-color: rgb(54, 164, 253);
+  font-family: "Lato-Regula";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: "Poppins-Bold";  
+  src: url("./2/assets/fonts/Lato-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}  
